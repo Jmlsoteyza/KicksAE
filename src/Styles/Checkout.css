@@ -1,0 +1,121 @@
+.Checkout_container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #111;
+}
+.Checkout_innerCointaner {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  padding-inline: 2rem;
+  padding-block: 2rem;
+  background-color: #f5f5f5;
+  height: 750px;
+}
+.Checkout-payments_container {
+  max-width: 400px;
+  width: 100%;
+}
+.Checkout-payments_header {
+  margin-bottom: 1.875rem;
+  color: #111;
+  font-weight: 550;
+  padding-left: 0.3rem;
+}
+.Checkout-payments_container span {
+  font-size: 12px;
+  padding-left: 0.3rem;
+  padding-bottom: 8px;
+  color: #414141;
+}
+.Checkout_form input {
+  padding: 0.7rem 0.813rem;
+  border-radius: 6px;
+  outline: none;
+  border: 1px solid #e6e8ec;
+  margin-bottom: 1rem;
+}
+.Checkout_form input:focus {
+  border: 1px solid #4a5fac;
+}
+.Checkout-payments_productsContainer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding-inline: 2rem;
+  padding-block: 2.5rem;
+}
+.Checkout_email,
+.Checkout_creditCard {
+  display: flex;
+  flex-direction: column;
+}
+.Checkout-Date_CVV {
+  display: flex;
+  gap: 1rem;
+}
+.Checkout-Date_CVV input {
+  width: 100%;
+  max-width: 192px;
+}
+.Checkout_Date,
+.Checkout_CVV {
+  display: flex;
+  flex-direction: column;
+}
+.Checkout_subtotal,
+.Checkout_fee,
+.Checkout_totalAmount {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1.2rem;
+}
+.Checkout_checkbox {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin-top: 1rem;
+  margin-bottom: 1.2rem;
+}
+.Checkout_checkbox input {
+  margin: 0;
+  accent-color: #272727;
+}
+hr {
+  margin-block: 1.3rem;
+}
+.Checkout-form_button {
+  margin-top: 2.25rem;
+}
+.Checkout-form_button button {
+  width: 100%;
+  padding: 1rem;
+  font-size: 16px;
+  font-weight: 500;
+  outline: none;
+  border: transparent;
+  color: #fff;
+  background-color: #111;
+  border-radius: 6px;
+}
+.Checkout-payments_container h3 {
+  font-size: 12px;
+}
+.Checkout-payments_container h6 {
+  font-size: 15px;
+  font-weight: 550;
+}
+/* products */
+.Checkout-products_container {
+  width: 40%;
+  max-width: 40%;
+}
+.Checkout-products_header {
+  display: flex;
+  justify-content: space-between;
+}

@@ -1,0 +1,93 @@
+.footer_container {
+  width: 100%;
+  padding-top: 7.188rem;
+  padding-bottom: 3.375rem;
+  background-color: #111;
+  color: #fff;
+  font-family: Arimo;
+  margin-top: 5rem;
+}
+.footer_innerContainer {
+  max-width: 75rem;
+  margin: 0 auto;
+}
+.footer_container h1 {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  font-family: Oswald;
+}
+.footer-container_flex {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+.footer-flex {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.footer_ul li {
+  list-style: none;
+  color: #757575;
+  font-size: 0.75rem;
+  margin-top: 7px;
+}
+.footer_ul li span {
+  display: block;
+  width: 5.938rem;
+  line-height: 1.6;
+  float: left;
+  text-align: left;
+}
+.footer_ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.footer_single {
+  width: 100%;
+  max-width: 22rem;
+  margin-right: 2rem;
+}
+.footer_accounts {
+  width: 100%;
+  max-width: 200px;
+}
+
+.footer_email label input {
+  height: 35px;
+  padding-left: 0.5rem;
+  max-width: 15rem;
+  outline: none;
+  border: none;
+  z-index: 1;
+  margin-top: 0.5rem;
+}
+.footer_email label button {
+  outline: none;
+  border: 1px solid #fff;
+  background-color: #111;
+  color: #fff;
+  padding: 0rem 0.7rem;
+  margin-top: 1.5rem;
+  height: 2.5rem;
+}
+.footer-email_button:hover {
+  background-color: #fff;
+  color: #111;
+  cursor: pointer;
+  transition: all 0.1s;
+}
+.footer_bottom {
+  background-color: #111;
+  color: #fff;
+}
+.footer_innerBottom {
+  max-width: 75rem;
+  margin: 0 auto;
+  text-align: center;
+  padding-bottom: 0.78rem;
+  font-size: 12px;
+}

@@ -1,0 +1,79 @@
+import React, { useState } from "react";
+import { NavLink } from "react-router-dom";
+import Logo from "../assets/images/logo.png";
+import { BiSearch } from "react-icons/bi";
+import { MdPermIdentity } from "react-icons/md";
+import { BiShoppingBag } from "react-icons/bi";
+import "../Styles/Navbar.css";
+import Cart from "./Cart";
+import { useSelector } from "react-redux";
+
+const Navbar = () => {
+  const [open, setOpen] = useState(false);
+  const products = useSelector((state) => state.cart.products);
+
+  const handleCartClose = () => {
+    setOpen(false);
+  };
+
+  return (
+    <>
+      <section className="navbar_container">
+        <div className="navbar_wrapper">
+          <NavLink to="/">
+            <div className="logo">
+              <img src={Logo} alt={Logo} />
+            </div>
+          </NavLink>
+          <ul className="navbar_ul">
+            <NavLink
+              className={({ isActive }) => (isActive ? "link active" : "link")}
+              to="/"
+            >
+              <li className="navbar_home">Home</li>
+            </NavLink>
+            <NavLink to="About" className="link">
+              <li>About</li>
+            </NavLink>
+            <NavLink to="StoreProduct" className="link">
+              <li>Shop</li>
+            </NavLink>
+            <NavLink to="Blogs" className="link">
+              <li>Blogs</li>
+            </NavLink>
+          </ul>
+          <div className="navbar_right">
+            <div className="navbar_searchBar">
+              <input
+                className="navbar_search"
+                type="text"
+                placeholder="Search"
+              />
+              <button className="navbar-btn_logo">
+                <BiSearch
+                  className="navbar-search_logo"
+                  style={{ fontSize: 25 }}
+                />
+              </button>
+            </div>
+            <div className="navbar_cartLogo">
+              <MdPermIdentity style={{ fontSize: "26px" }} />
+              <div
+                className="navbar_shoppingBag"
+                onClick={() => setOpen(!open)}
+              >
+                <span className="navbar_number">{products.length}</span>
+                <BiShoppingBag
+                  style={{ fontSize: "26px", cursor: "pointer" }}
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      {open && <Cart handleClose={handleCartClose} />}
+    </>
+  );
+};
+
+export default Navbar;

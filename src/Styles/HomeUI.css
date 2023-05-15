@@ -1,0 +1,43 @@
+.homeUI_contaniner {
+  background-color: #111;
+  color: #fff;
+  padding-inline: 2rem;
+  padding-bottom: 4rem;
+  padding-top: 3rem;
+}
+.homeUI_innercontainer {
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+}
+.homeUI_firstImg {
+  width: 100%;
+  max-width: 650px;
+  object-fit: cover;
+}
+.homeUI_firstImg h1 {
+  font-size: 22px;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+}
+.homeUI_secImg {
+  width: 100%;
+  object-fit: cover;
+  max-width: 700px;
+  position: relative;
+  height: max-content;
+}
+.homeUI_firstImg img,
+.homeUI_secImg img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.homeUI_secImg h1 {
+  position: absolute;
+  color: rgba(255, 255, 255, 0.705);
+  font-size: 62px;
+  bottom: 0;
+  left: 3%;
+  width: 400px;
+}

@@ -1,0 +1,286 @@
+@import url("https://fonts.googleapis.com/css2?family=Arimo:wght@400;500;600;700&display=swap");
+.Products_container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 1.5rem;
+  font-family: Helvetica Now Display, sans-serif;
+  height: 1000px;
+}
+.Product_link {
+  text-decoration: none;
+  color: #757575;
+}
+.Product_link:hover {
+  color: #000;
+}
+.Products_title {
+  /* margin-top: 2rem; */
+  font-size: 1.875rem;
+  font-family: inter;
+}
+.Products-inner_container {
+  max-width: 88.75rem;
+  width: 100%;
+  height: inherit;
+}
+.main_image {
+  width: 200px;
+  height: 200px;
+}
+.sub-image {
+  width: 6.25rem;
+  height: 6.25rem;
+}
+.Products-flex_container {
+  display: flex;
+  margin-top: 2.5rem;
+  gap: 5.257rem;
+}
+.Products-images_container {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 4rem;
+  margin-left: 4rem;
+}
+.Products-text_seeAll {
+  margin-left: 4rem;
+}
+.main-image_container {
+  width: 40.625rem;
+  height: fit-content;
+}
+.main-image_container img {
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
+}
+.sub-images_container {
+  /* margin-top: 1.8rem; */
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  align-items: center;
+  /* justify-content: center; */
+}
+.sub_images img {
+  width: 100%;
+  height: 100%;
+}
+.sub-images:focus-within .sub-image {
+  outline: 1px solid black;
+}
+
+.sub_images img {
+  height: 7.688rem;
+  width: 5.938rem;
+  object-fit: fill;
+}
+
+/* aside */
+aside {
+  max-width: 25.25rem;
+  width: 100%;
+}
+.Products_price {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1.2rem;
+  margin-bottom: 2rem;
+}
+.Products-price_price {
+  text-decoration: line-through;
+  color: #757575 !important;
+}
+.Products_aside {
+  padding-inline: 1rem;
+}
+.Products_aside h1 {
+  font-size: 2rem;
+  line-height: 38.4px;
+  color: #111111;
+  margin-bottom: 0.5rem;
+  font-weight: 550;
+}
+.Products_aside p {
+  font-size: 1rem;
+  font-weight: 500;
+  font-family: "Arimo", sans-serif;
+  color: #000;
+}
+.Products-details_container {
+  font-family: "Arimo", sans-serif;
+}
+.Products-size {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 600;
+  padding-bottom: 1rem;
+}
+.Products-size span {
+  color: #757575;
+  cursor: pointer;
+  font-weight: 500;
+}
+.Products-size span:hover {
+  color: #b3b3b3;
+}
+.Products-cty_sizes {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.Products-cty_sizes p {
+  color: #757575;
+}
+
+.Products-cty_text.active,
+.Products-cty_text_eu.active {
+  color: #000;
+  text-decoration: underline;
+}
+.Products-cty_sizes :first-child {
+  padding-right: 9px;
+  border-right: 1px solid #757575;
+  height: 16px;
+}
+.Products-cty_sizes :nth-child(2) {
+  padding-left: 4px;
+}
+
+.Products-shoe_sizes {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: minmax(50px, auto);
+  /* padding: 1px; */
+  gap: 7px;
+  padding-top: 1.5rem;
+}
+.Products-shoesizes_btn {
+  outline: none;
+  font-size: 1rem;
+  border-radius: 5px;
+  color: #111;
+  width: 100%;
+  text-align: center;
+  white-space: nowrap;
+  height: 3rem;
+  max-width: 100%;
+  overflow: hidden;
+  background-color: #fff;
+  border: 1px solid #ccc !important;
+  cursor: pointer;
+  font-family: Helvetica Now Display, sans-serif;
+}
+.Products-shoesizes_btn:hover {
+  border: 1px solid #111 !important;
+}
+.Products-shoesizes_btn.active {
+  border: 1px solid #111 !important;
+}
+/* 4 payments */
+.Products_interest img {
+  width: 100%;
+  max-width: 3rem;
+  position: absolute;
+  right: 17px;
+}
+.Products_interest {
+  display: flex;
+  position: relative;
+  width: 100%;
+  background-color: #f5f5f5;
+  border: 1px solid #d6d6d3;
+  padding: 14px 14px;
+  border-radius: 8px;
+  margin-top: 27px;
+}
+.Products_interest p {
+  font-size: 0.875rem;
+}
+.Products_addToBag {
+  width: 100%;
+  margin-top: 2.7rem;
+}
+.Products_addToBag button {
+  width: 100%;
+  outline: none;
+  border: none;
+  padding: 1.357rem 0.6rem;
+  text-align: center;
+  border-radius: 60px;
+  background-color: black;
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+}
+.Products_addToBag button:hover {
+  background-color: #757575;
+  transition: all .2s;
+}
+.Products_learnMore {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.Products_learnMore:hover{
+  color: #757575;
+  transition: all .2s;
+}
+.Product-FAQ {
+  width: 100%;
+  margin-top: 2.5rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid #757575;
+}
+.Product-FAQ h2 {
+  font-size: 20px;
+}
+.FAQ-logo {
+  transition: transform 0.3s ease-in-out;
+  color: inherit;
+}
+.FAQ-logo.rotate {
+  transform: rotate(180deg);
+  transition: transform 0.3s ease-in-out;
+}
+.Product_FAQ-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  cursor: pointer;
+}
+.FAQ-logo {
+  position: absolute;
+  right: 0;
+  font-size: 22px;
+  top: 15%;
+}
+.Product-FAQ_container {
+  overflow: hidden;
+  transition: max-height 0.2s ease-in-out;
+  border: none;
+}
+.Product-ul {
+  margin-top: 1.5rem;
+}
+.Product-ul li {
+  list-style: inside;
+  line-height: 1.6;
+  align-items: center;
+  font-family: "Arimo", sans-serif;
+}
+.Product-li span {
+  padding-left: 1.5rem;
+}
+.Products-four_payments p{
+  font-weight: 500;
+}
+.Products-four_payments span {
+  font-weight: 700;
+}

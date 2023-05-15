@@ -1,0 +1,86 @@
+.BlogsSingle_container {
+  width: 100%;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.BlogsSingle_innerContainer {
+  margin: 0 auto;
+  max-width: 1200px;
+}
+.BlogsSingle_innerContainer h1 {
+  font-size: 32px;
+  font-weight: 550;
+  margin-top: 0.5rem;
+}
+.BlogsSingle_innerContainer h2 {
+  font-size: 14px;
+  margin-bottom: 1.5rem;
+}
+.BlogsSingle_logo {
+  width: 100%;
+  position: relative;
+}
+.BlogsSingle_logo img {
+  display: block;
+  height: 100%;
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+}
+.BlogsSingle_logo::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.315);
+}
+.Blogs_image {
+  width: 100%;
+}
+.BlogsSingle_headline {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+.BlogsSingle-headline-textLeft,
+.BlogsSingle-headline-textRight {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+.Blogs_image img {
+  width: 100%;
+  object-fit: cover;
+  height: fit-content;
+  max-height: 1000px;
+}
+.BlogsSingle-text_center {
+  margin-top: 1rem;
+}
+.BlogsSingle-text_center p {
+  font-size: 18px;
+  margin-bottom: 1rem;
+}
+.BlogsSingle_icons:hover {
+  color: #2e2e2e;
+  cursor: pointer;
+}
+.BlogsSingle_tags button {
+  margin-top: 0.6rem;
+  outline: none;
+  border: none;
+  margin-right: 1rem;
+  font-size: 15px;
+  padding: 0.6rem 0.7rem;
+  color: #fff;
+  border-radius: 6px;
+  background-color: #111;
+}
+.BlogsSingle_tags button:hover {
+  background-color: #2e2e2e;
+  cursor: pointer;
+}

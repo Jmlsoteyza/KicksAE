@@ -1,0 +1,65 @@
+.homeCarousel_container {
+  padding: 2rem;
+  position: relative;
+  margin-top: 4.5rem;
+}
+.small {
+  width: 100%;
+  max-width: 560px;
+}
+
+.carouselItem {
+  width: 100%;
+}
+.container {
+  /* margin-left: 2.2rem; */
+  overflow-y: hidden;
+  /* border: 1px solid blue; */
+  padding-top: 3.5rem;
+  padding-bottom: 1rem;
+  position: relative;
+  padding-left: 1.658rem;
+}
+.react-multiple-carousel__arrow {
+  background-color: #e5e5e5;
+}
+.react-multiple-carousel__arrow:hover {
+  background-color: #b1b1b1;
+}
+.react-multiple-carousel__arrow::before {
+  color: black;
+  font-size: 1rem;
+}
+.react-multiple-carousel__arrow--left {
+  left: auto;
+  right: 4.9%;
+  top: 0;
+}
+.react-multiple-carousel__arrow--right {
+  right: 1.5%;
+  top: 0;
+}
+.h1_absolute {
+  position: absolute;
+  font-size: 24px;
+  left: 3.3%;
+  top: 5%;
+}
+.carousel-item-container h1 {
+  margin-top: 1.5rem;
+  color: #111;
+  font-weight: 600;
+}
+.carousel-item-container h2 {
+  margin-bottom: 0.8rem;
+  margin-top: 0.3rem;
+  color: #757575;
+  font-size: 0.938rem;
+  font-weight: normal;
+}
+.carousel-item-container h3 {
+  font-weight: 500;
+}
+.carousel-item-container {
+  font-family: Inter;
+}

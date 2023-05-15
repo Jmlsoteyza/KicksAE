@@ -1,0 +1,233 @@
+.about_logo {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  user-select: none;
+}
+
+.about_logo::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.315);
+}
+.about_logo img {
+  display: block;
+  height: 100%;
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+}
+.about_logo h1 {
+  position: absolute;
+  left: 50%;
+  top: 80%;
+  transform: translate(-50%, -50%);
+  color: rgba(255, 255, 255, 0.904);
+  font-size: 4rem;
+  text-align: center;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+/* maps */
+.leaflet-container {
+  width: 100%;
+  height: 100vw;
+  max-width: 726px;
+  max-height: 600px;
+}
+.map-wrapper {
+  width: 100%;
+}
+/* maps */
+/* aboutus */
+.about-us_innerContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  margin-block: 3.5rem;
+}
+.about-us_center {
+  max-width: 75rem;
+  width: 100%;
+  padding: 2.813rem;
+  background-color: #e9e8e8;
+  display: flex;
+  gap: 1rem;
+}
+.about-us_center img {
+  width: 100%;
+  max-width: 33.125rem;
+  min-width: 300px;
+  height: max-content;
+}
+.about-us_text {
+  padding: 2.5rem 2.5rem 1.875rem 1.875rem;
+  background-color: #fff;
+  height: fit-content;
+  width: 46.063rem;
+  margin-left: -9.375rem;
+  margin-top: 4.2rem;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  z-index: 1;
+}
+.about-us_text h1 {
+  margin-bottom: 30px;
+  color: #111;
+  text-transform: uppercase;
+  font-size: 1.125rem;
+  /* font-weight: 600; */
+  font-family: Inter;
+  position: relative;
+}
+.about-us_text h1::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  width: 3.75rem;
+  left: 0;
+  right: 0;
+  background-color: #111;
+  height: 2px;
+}
+.about-us_text p {
+  font-size: 0.938rem;
+  margin-bottom: 1rem;
+  color: #111;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.contact-us_container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  margin-block: 3.5rem;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.contact-us_innerContainer {
+  max-width: 75rem;
+  width: 100%;
+  padding: 2.5rem;
+  background-color: #e9e8e8;
+  color: #111;
+  display: flex;
+  /* gap: 1rem; */
+  /* justify-content: space-between; */
+}
+.contact-us_header {
+  text-align: center;
+  font-size: 1.375rem;
+}
+.contact-us_headerContainer {
+  position: relative;
+  max-width: 9.375rem;
+  margin: 0 auto;
+  width: 100%;
+}
+.contact-us_header::before {
+  content: "";
+  position: absolute;
+  width: 3.125rem;
+  height: 2px;
+  background-color: #111;
+  bottom: -5px;
+  left: 30%;
+}
+.contact-us_contactDetails {
+  max-width: 400px;
+  width: 100%;
+  padding-inline: 0.938rem;
+}
+.contact-us_contactDetails h1 {
+  font-size: 1.5rem;
+  position: relative;
+}
+.contact-us_contactDetails h1::after {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 2px;
+  background-color: #1111112a;
+  bottom: 0;
+  left: 0;
+}
+.contact-details_container {
+  margin-top: 2rem;
+}
+.contact-details_flex {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  height: max-content;
+  margin-bottom: 1.2rem;
+}
+.contact-details_flex span {
+  font-size: 1rem;
+}
+.contact-us_icons {
+  background-color: #ffffff6e;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 2.188rem;
+  height: 2.188rem;
+}
+.contact-us_mdIcons {
+  font-size: 1.375rem;
+  position: relative;
+}
+.contact-message_container {
+  padding-right: 2rem;
+  margin-top: 3rem;
+}
+.contact-message_innerContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 0.938rem;
+  margin-top: 1.875rem;
+}
+.contact-message_innerContainer input {
+  border: medium none;
+  box-shadow: none;
+  color: #999;
+  height: 40px;
+  padding: 0 1.25rem;
+  transition: all 0.5s ease 0s;
+  width: 100%;
+  outline: none;
+  background-color: #ffffff6e;
+  color: #111;
+}
+.contact-message_innerContainer textarea {
+  border: medium none;
+  height: 100px;
+  padding: 0.938rem 1.25rem;
+  width: 100%;
+  outline: none;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #ffffff6e;
+  color: #111;
+}
+.contact-message_btn button {
+  outline: none;
+  border: transparent;
+  background-color: #111;
+  padding: 0.8rem 1rem;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 6px;
+}
+.contact-message_btn button:hover {
+  background-color: #2e2e2e;
+}
