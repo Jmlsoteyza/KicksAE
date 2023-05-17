@@ -21,8 +21,6 @@ import HomeLogos1 from "../assets/images/HomeLogos1.png";
 import HomeLogos2 from "../assets/images/HomeLogos2.png";
 import HomeLogos3 from "../assets/images/HomeLogos3.png";
 
-
-
 const Home = () => {
   const heroData = [
     {

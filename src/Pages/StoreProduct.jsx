@@ -4,7 +4,6 @@ import "../Styles/StoreProduct.css";
 import { Link } from "react-router-dom";
 import PercentSlider from "../Components/PercentSlider";
 import logoAds from "../assets/images/logo_ads2.png";
-import { useLocation } from 'react-router-dom';
 
 const StoreProduct = () => {
   const [data, setData] = useState(ProductData);

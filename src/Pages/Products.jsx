@@ -180,7 +180,7 @@ const Products = () => {
                     >
                       Add to bag
                     </button>
-                    {open && <Cart handleClose={handleCartClose}/>}
+                    {open && <Cart handleClose={handleCartClose} />}
                   </div>
                   <ProductSingleFaq />
                 </div>

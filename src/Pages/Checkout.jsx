@@ -1,65 +1,50 @@
 import React from "react";
 import { useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
 import "../Styles/Checkout.css";
+import { HiTrash } from "react-icons/hi";
+import { removeItem } from "../Components/redux/CartReducer";
+import CardPayment from "../Components/CardPayment";
 
 const Checkout = () => {
   const products = useSelector((state) => state.cart.products);
-  console.log(products)
+  const dispatch = useDispatch();
+
+  const datesText = {
+    weekday: "long",
+    year: "numeric",
+    month: "long",
+    day: "numeric",
+  };
+
+  const secondDays = new Date(Date.now() + 2 * 24 * 60 * 60 * 1000);
+  const fourDays = new Date(Date.now() + 4 * 24 * 60 * 60 * 1000);
 
   return (
     <section className="Checkout_container">
       <div className="Checkout_innerCointaner">
         <div className="Checkout-payments_productsContainer">
-          <div className="Checkout-payments_container">
-            <div className="Checkout-payments_header">
-              <h1>Payment Details</h1>
-            </div>
-            <form action="payment" className="Checkout_form">
-              <div className="Checkout_email">
-                <span>Email address</span>
-                <input type="Email" name="Email" placeholder="Email" />
-              </div>
-              <div className="Checkout_creditCard">
-                <span>Credit Card Number</span>
-                <input type="tel" name="number" placeholder="Card Number" />
-              </div>
-              <div className="Checkout-Date_CVV">
-                <div className="Checkout_Date">
-                  <span>Expiry Date</span>
-                  <input type="tel" placeholder="mm / yy" />
-                </div>
-                <div className="Checkout_CVV">
-                  <span>CVV</span>
-                  <input type="tel" placeholder="x x x" />
-                </div>
-              </div>
-              <div className="Checkout_checkbox">
-                <input type="checkbox" name="promodocode" />
-                <h2>I have promo code</h2>
-              </div>
-              <div className="Checkout_subtotal">
-                <h3>Subtotal</h3>
-                <h6>AED 96</h6>
-              </div>
-              <div className="Checkout_fee">
-                <h3>Platform Fee</h3>
-                <h6>AED 4</h6>
-              </div>
-              <hr />
-              <div className="Checkout_totalAmount">
-                <h3>Total Amount</h3>
-                <h6>AED 100</h6>
-              </div>
-              <div className="Checkout-form_button">
-                <button type="payment">Make Payment</button>
-              </div>
-            </form>
-          </div>
+          <CardPayment />
           <div className="Checkout-products_container">
             <div className="Checkout-products_innerContainer">
               <div className="Checkout-products_header">
                 <h1>Your Bag</h1>
-                <span>(0)</span>
+                <span>({products.length})</span>
+              </div>
+              <div className="Checkout-products_text">
+                <p style={{ textAlign: "center" }}>
+                  Your order qualifies for
+                  <span style={{ fontWeight: "550" }}> Free Delivery</span>
+                </p>
+              </div>
+              <div className="Checkout_date">
+                <h1>
+                  Estimated Delivery by{" "}
+                  <span>
+                    {secondDays.toLocaleDateString("en-US", datesText)} -{" "}
+                  </span>
+                  <span>{fourDays.toLocaleDateString("en-US", datesText)}</span>
+                </h1>
               </div>
               <div className="Checkout-bag_container">
                 {products.map((products) => (
@@ -69,6 +54,17 @@ const Checkout = () => {
                   >
                     <div className="Checkout-bag_img">
                       <img src={products.image} alt="" />
+                    </div>
+                    <div className="Checkout-bag_text">
+                      <span>{products.title}</span>
+                      <h2>{products.subTitle}</h2>
+                      <h3>{products.size}</h3>
+                      <span>AED {products.price}</span>
+                    </div>
+                    <div className="Checkout-bag_removeIcon">
+                      <HiTrash
+                        onClick={() => dispatch(removeItem(products.id))}
+                      />
                     </div>
                   </div>
                 ))}
