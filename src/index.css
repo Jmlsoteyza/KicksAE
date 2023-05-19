@@ -120,3 +120,41 @@ video {
   font: inherit;
   vertical-align: baseline;
 }
+@media (max-width: 1200px) {
+  .Blogs_flex {
+    padding: 2.813rem 1rem;
+    justify-content: center;
+  }
+}
+@media (max-width: 1150px) {
+  .Blogs-data_container {
+    max-width: 330px;
+  }
+  .Blogs_flex {
+    padding: 2.813rem 0.5rem;
+  }
+}
+@media (max-width: 1070px) {
+  .Blogs-data_container {
+    max-width: 300px;
+  }
+}
+@media (max-width: 979px) and (min-width: 650px) {
+  .Blogs-data_container {
+    max-width: 350px;
+  }
+  .Blogs_logo h1 {
+    font-size: 3vw;
+  }
+}
+@media (max-width: 745px) {
+  .Blogs-data_container {
+    max-width: 280px;
+  }
+}
+@media (max-width: 604px) {
+  .Blogs-data_container {
+    max-width: 100%;
+    margin-inline: 1rem;
+  }
+}

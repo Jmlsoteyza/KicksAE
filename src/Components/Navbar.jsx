@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import Logo from "../assets/images/logo.png";
 import { BiSearch } from "react-icons/bi";
-import { MdPermIdentity } from "react-icons/md";
 import { BiShoppingBag } from "react-icons/bi";
 import "../Styles/Navbar.css";
 import Cart from "./Cart";
@@ -10,7 +9,10 @@ import { useSelector } from "react-redux";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
+  const [navbarOpen, setNavbarOpen] = useState(false);
   const products = useSelector((state) => state.cart.products);
+
+  const navbarClick = () => setNavbarOpen(!navbarOpen);
 
   const handleCartClose = () => {
     setOpen(false);
@@ -25,7 +27,7 @@ const Navbar = () => {
               <img src={Logo} alt={Logo} />
             </div>
           </NavLink>
-          <ul className="navbar_ul">
+          <ul className={navbarOpen ? "navbar_ul active" : "navbar_ul"}>
             <NavLink
               className={({ isActive }) => (isActive ? "link active" : "link")}
               to="/"
@@ -66,6 +68,14 @@ const Navbar = () => {
                   style={{ fontSize: "26px", cursor: "pointer" }}
                 />
               </div>
+            </div>
+            <div
+              className={navbarOpen ? "toggle active" : "toggle"}
+              onClick={navbarClick}
+            >
+              <span></span>
+              <span></span>
+              <span></span>
             </div>
           </div>
         </div>

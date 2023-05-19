@@ -5,6 +5,7 @@
   font-weight: 600;
   box-sizing: border-box;
   border-bottom: 1px solid #e0e0e0;
+  z-index: 999 !important;
 }
 .navbar_wrapper {
   display: flex;
@@ -102,4 +103,107 @@
 .link:hover::after {
   width: 100%;
   transition: all 0.2s ease-in-out;
+}
+
+.toggle {
+  position: relative;
+  width: 35px;
+  height: 35px;
+  background-color: #fff;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  overflow: hidden;
+  display: none;
+}
+.toggle span {
+  position: absolute;
+  width: 20px;
+  height: 3px;
+  background-color: black;
+  border-radius: 4px;
+  transition: 0.5s;
+}
+.toggle span:nth-child(1) {
+  transform: translateY(-8px);
+  width: 15px;
+  left: 7px;
+}
+.toggle span:nth-child(2) {
+  transform: translateY(8px);
+  width: 10px;
+  left: 7px;
+}
+.toggle.active span:nth-child(1) {
+  transform: translateY(0px) rotate(45deg);
+  width: 20px;
+  left: 7px;
+}
+.toggle.active span:nth-child(2) {
+  transform: translateY(0px) rotate(315deg);
+  width: 20px;
+  left: 7px;
+}
+.toggle.active span:nth-child(3) {
+  transform: translateX(30px);
+}
+
+/* ul container */
+@media (max-width: 950px) {
+  .navbar_ul {
+    display: flex;
+    position: fixed;
+    top: 0;
+    right: 0;
+    flex-direction: column;
+    z-index: 99;
+    width: 100%;
+    background-color: #111;
+    height: 100%;
+    color: #fff;
+    justify-content: center;
+    overflow: hidden;
+    transform: translateX(100%);
+    transition: all 0.3s;
+  }
+  .navbar_ul.active {
+    transform: translateX(60%);
+  }
+  .navbar_ul li {
+    color: #fff;
+    padding-left: 9rem;
+  }
+  .toggle {
+    display: flex;
+    z-index: 999;
+  }
+  .navbar_container {
+    padding: 1rem;
+  }
+}
+@media (max-width: 725px) {
+  .navbar_ul.active {
+    transform: translateX(40%);
+  }
+  .navbar_ul li {
+    padding-left: 30%;
+  }
+}
+
+@media (max-width: 500px) {
+  .navbar_searchBar {
+    display: none;
+  }
+  .navbar_ul.active {
+    transform: translateX(0%);
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+  .navbar_ul li {
+    padding: 0;
+  }
 }
