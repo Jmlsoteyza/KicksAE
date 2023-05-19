@@ -7,11 +7,8 @@
   margin-bottom: 8rem;
 }
 .HomeImages-inner_container {
-  max-width: 1780px;
+  max-width: 111.25rem;
   width: 100%;
-  /* display: flex; */
-  /* align-items: center; */
-  /* justify-content: center; */
 }
 .HomeImages_images {
   display: flex;
@@ -29,7 +26,7 @@
   margin-top: 4rem;
 }
 .HomeImages_titles h1 {
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: 600;
 }
 .HomeImages_titles button {

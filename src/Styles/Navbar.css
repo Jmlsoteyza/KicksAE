@@ -37,7 +37,7 @@
 .navbar_searchBar {
   display: flex;
   align-items: center;
-  height: 40px;
+  height: 2.5rem;
 }
 .logo img {
   margin-right: 3.5rem;
@@ -47,22 +47,22 @@
   border: none;
   outline: none;
   border-radius: 50%;
-  width: 35px;
-  height: 35px;
+  width: 2.188rem;
+  height: 2.188rem;
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: transparent;
 }
 .navbar_search {
-  border-radius: 12px;
+  border-radius: 0.75rem;
   outline: none;
   border: none;
   position: relative;
   padding: 0.6rem;
   padding-right: 0;
   padding-left: 2.5rem;
-  width: 150px;
+  width: 9.375rem;
   background-color: #f3f3f3;
 }
 .navbar-search_logo {
@@ -71,7 +71,7 @@
 
 .navbar_number {
   position: absolute;
-  font-size: 10px;
+  font-size: 0.625rem;
   right: 35%;
   bottom: 6%;
   font-family: "Arimo", sans-serif;

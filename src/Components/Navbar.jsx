@@ -57,7 +57,6 @@ const Navbar = () => {
               </button>
             </div>
             <div className="navbar_cartLogo">
-              <MdPermIdentity style={{ fontSize: "26px" }} />
               <div
                 className="navbar_shoppingBag"
                 onClick={() => setOpen(!open)}

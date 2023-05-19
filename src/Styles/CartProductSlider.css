@@ -3,7 +3,7 @@
   margin-top: 5rem;
 }
 .slide-images img {
-  width: 550px;
+  width: 34.375rem;
   object-fit: cover;
 }
 .slide-image_container {
@@ -26,15 +26,15 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  max-width: 1745px;
+  max-width: 109.063rem;
   margin: 0 auto;
 }
 .slide_text h1 {
-  font-size: 24px;
+  font-size: 1.5rem;
 }
 .slide-icons span {
-  width: 48px;
-  height: 48px;
+  width: 3rem;
+  height: 3rem;
   border-radius: 50%;
   background-color: #e5e5e5;
   display: flex;

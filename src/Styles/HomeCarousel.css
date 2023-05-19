@@ -5,7 +5,7 @@
 }
 .small {
   width: 100%;
-  max-width: 560px;
+  max-width: 35rem;
 }
 
 .carouselItem {
@@ -41,7 +41,7 @@
 }
 .h1_absolute {
   position: absolute;
-  font-size: 24px;
+  font-size: 1.5rem;
   left: 3.3%;
   top: 5%;
 }

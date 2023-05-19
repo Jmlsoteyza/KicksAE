@@ -57,7 +57,7 @@
 }
 
 .footer_email label input {
-  height: 35px;
+  height: 2.188rem;
   padding-left: 0.5rem;
   max-width: 15rem;
   outline: none;
@@ -89,5 +89,5 @@
   margin: 0 auto;
   text-align: center;
   padding-bottom: 0.78rem;
-  font-size: 12px;
+  font-size: 0.75rem;
 }

@@ -120,8 +120,6 @@
   background-color: #e9e8e8;
   color: #111;
   display: flex;
-  /* gap: 1rem; */
-  /* justify-content: space-between; */
 }
 .contact-us_header {
   text-align: center;
@@ -154,7 +152,7 @@
 .contact-us_contactDetails h1::after {
   content: "";
   position: absolute;
-  width: 50px;
+  width: 3.125rem;
   height: 2px;
   background-color: #1111112a;
   bottom: 0;
@@ -201,7 +199,7 @@
   border: medium none;
   box-shadow: none;
   color: #999;
-  height: 40px;
+  height: 2.5rem;
   padding: 0 1.25rem;
   transition: all 0.5s ease 0s;
   width: 100%;
@@ -211,7 +209,7 @@
 }
 .contact-message_innerContainer textarea {
   border: medium none;
-  height: 100px;
+  height: 6.25rem;
   padding: 0.938rem 1.25rem;
   width: 100%;
   outline: none;
