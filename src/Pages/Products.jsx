@@ -8,6 +8,7 @@ import { useDispatch } from "react-redux";
 import { addToCart } from "../Components/redux/CartReducer";
 import CartProductsSlider from "../Components/CartProductsSlider";
 import Cart from "../Components/Cart";
+import ProductsAdds from "../Components/ProductsAdds";
 
 const Products = () => {
   const dispatch = useDispatch();
@@ -86,6 +87,7 @@ const Products = () => {
           <Link to="/StoreProduct" className="Product_link">
             <span className="Products-text_seeAll">Shop all</span>
           </Link>
+          <ProductsAdds products={products}/>
           <div className="Products-flex_container">
             <div className="Products-images_container">
               <div className="main-image_container">

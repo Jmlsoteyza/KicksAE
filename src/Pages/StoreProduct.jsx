@@ -11,8 +11,6 @@ const StoreProduct = () => {
   const [price, setPrice] = useState(0);
   const [sortProducts, setSortProducts] = useState("");
 
-  
-
   const sortData = (productsSort) => {
     switch (productsSort) {
       case "atoz":
@@ -168,6 +166,9 @@ const StoreProduct = () => {
             </div>
           </div>
           <div className="products">
+            <h1 className="products_h1">
+              Products
+            </h1>
             <div className="products-imageAds">
               <img src={logoAds} alt={logoAds} />
             </div>

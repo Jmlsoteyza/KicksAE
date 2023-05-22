@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { BsChevronRight, BsChevronLeft } from "react-icons/bs";
 import mainProduct1 from "../assets/images/mainproduct-lbj.png";
@@ -12,7 +12,24 @@ import "../Styles/CartProductSlider.css";
 
 const CartProductsSlider = () => {
   const [current, setCurrent] = useState(0);
-  const [showProducts] = useState(3);
+  const [showProducts, setShowProducts] = useState(3);
+  const [smallScreen, setSmallScreen] = useState(false);
+
+  useEffect(() => {
+    const mediaQuery = window.matchMedia("(max-width: 900px)");
+
+    const handleChangeSliderScreen = (e) => {
+      setSmallScreen(e.matches);
+      setShowProducts(e.matches ? 2 : 3);
+    };
+
+    mediaQuery.addEventListener("change", handleChangeSliderScreen);
+    handleChangeSliderScreen(mediaQuery);
+
+    return () => {
+      mediaQuery.removeEventListener("change", handleChangeSliderScreen);
+    };
+  }, [smallScreen]);
   const ProductSlider = [
     {
       id: 1,

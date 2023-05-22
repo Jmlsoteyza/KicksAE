@@ -27,7 +27,7 @@ const PercentSlider = () => {
         </div>
       </SwiperSlide>
       <SwiperSlide className="try">
-        <div className="hero-autoplay_text">
+        <div className="hero-autoplay_text text2">
           40% off season sale is on.{" "}
           <Link className="hero_shopnow" to="/StoreProduct">
             <span>Shop now</span>

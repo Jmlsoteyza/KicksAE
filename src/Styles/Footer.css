@@ -34,6 +34,13 @@
   font-size: 0.75rem;
   margin-top: 7px;
 }
+.footer_ul li:hover {
+  text-decoration: underline #fff;
+  cursor: pointer;
+  z-index: 999;
+  color: #fff;
+  transition: all 0.25s;
+}
 .footer_ul li span {
   display: block;
   width: 5.938rem;
@@ -53,7 +60,7 @@
 }
 .footer_accounts {
   width: 100%;
-  max-width: 200px;
+  max-width: 12.5rem;
 }
 
 .footer_email label input {
