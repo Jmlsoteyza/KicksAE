@@ -92,6 +92,9 @@ aside {
 }
 .Products_aside {
   padding-inline: 1rem;
+  max-width: 415px;
+  width: 100%;
+  min-width: 400px;
 }
 .Products_aside h1 {
   font-size: 2rem;
@@ -279,4 +282,17 @@ aside {
 }
 .Products-four_payments span {
   font-weight: 700;
+}
+
+/* Products adds on  */
+.Products_adds-text {
+  max-width: 500px;
+  display: none;
+}
+.Products_adds-text h1 {
+  font-size: 2rem;
+  line-height: 2.4rem;
+  color: #111111;
+  margin-bottom: 0.5rem;
+  font-weight: 550;
 }

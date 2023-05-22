@@ -87,7 +87,7 @@ const Products = () => {
           <Link to="/StoreProduct" className="Product_link">
             <span className="Products-text_seeAll">Shop all</span>
           </Link>
-          <ProductsAdds products={products}/>
+          <ProductsAdds products={products} />
           <div className="Products-flex_container">
             <div className="Products-images_container">
               <div className="main-image_container">
@@ -107,7 +107,6 @@ const Products = () => {
                 ))}
               </div>
             </div>
-            <aside>
               <div className="Products_aside">
                 <h1>{title}</h1>
                 <p className="Products-aside_subTitle">{subTitle}</p>
@@ -187,7 +186,6 @@ const Products = () => {
                   <ProductSingleFaq />
                 </div>
               </div>
-            </aside>
           </div>
         </div>
       </section>

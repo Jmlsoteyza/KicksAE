@@ -255,6 +255,24 @@ video {
   .sub-images_container {
     display: none;
   }
+  .Products-text_seeAll {
+    display: none;
+  }
+  .Products-flex_container {
+    flex-direction: column;
+  }
+  .Products-size, .Products-cty_sizes, .Products-shoe_sizes {
+    display: none;
+  }
+  .slide-container {
+    margin-top: 22rem;
+  }
+  .slide-image_container {
+    gap: 1.2rem;
+  }
+  .slide-icons_flex {
+    padding-inline: 1rem;
+  }
 }
 @media (max-width: 979px) and (min-width: 650px) {
   .Blogs-data_container {
