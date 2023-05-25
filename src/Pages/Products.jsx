@@ -9,6 +9,7 @@ import { addToCart } from "../Components/redux/CartReducer";
 import CartProductsSlider from "../Components/CartProductsSlider";
 import Cart from "../Components/Cart";
 import ProductsAdds from "../Components/ProductsAdds";
+import PercentSlider from "../Components/PercentSlider";
 
 const Products = () => {
   const dispatch = useDispatch();
@@ -82,6 +83,7 @@ const Products = () => {
 
   return (
     <>
+      <PercentSlider />
       <section className="Products_container">
         <div className="Products-inner_container">
           <Link to="/StoreProduct" className="Product_link">
@@ -107,85 +109,85 @@ const Products = () => {
                 ))}
               </div>
             </div>
-              <div className="Products_aside">
-                <h1>{title}</h1>
-                <p className="Products-aside_subTitle">{subTitle}</p>
-                <div className="Products_price">
-                  <p className="Products-price_price">AED {oldPrice}</p>
-                  <p className="Products-price_oldPrice">AED {price}</p>
-                </div>
-                <div className="Products-details_container">
-                  <div className="Products-size">
-                    <p>Select Size</p>
-                    <span>Size Guide</span>
-                  </div>
-                </div>
-                <div className="Products-cty_sizes">
-                  <p
-                    tabIndex="0"
-                    className={
-                      activeIndex === 0
-                        ? "Products-cty_text_eu active "
-                        : "active"
-                    }
-                    onClick={() => handleTextColor(0)}
-                  >
-                    EU
-                  </p>
-                  <p
-                    tabIndex="0"
-                    className={
-                      activeIndex === 1 ? "Products-cty_text active " : "active"
-                    }
-                    onClick={() => handleTextColor(1)}
-                  >
-                    US
-                  </p>
-                </div>
-                <div className="Products-shoe_container">
-                  <div
-                    className="Products-shoe_sizes"
-                    value={selectedSize}
-                    onChange={handleSizeSelect}
-                  >
-                    {renderSizeOptions()}
-                  </div>
-                </div>
-                <div className="Products-payments_container">
-                  <div className="Products_interest">
-                    <div className="Products-four_payments">
-                      <p>
-                        or 4 payments of <span>AED {reducedPrice}. </span>No
-                        interest, <br></br> no fees.{" "}
-                        <span className="Products_learnMore">Learn more</span>
-                      </p>
-                    </div>
-                    <div>
-                      <img src={tabby} alt={tabby} />
-                    </div>
-                  </div>
-                  <div className="Products_addToBag">
-                    <button
-                      onClick={() => {
-                        dispatch(
-                          addToCart({
-                            id: id,
-                            title: title,
-                            subTitle: subTitle,
-                            price: price,
-                            image: mainImage,
-                          })
-                        );
-                        setOpen(true);
-                      }}
-                    >
-                      Add to bag
-                    </button>
-                    {open && <Cart handleClose={handleCartClose} />}
-                  </div>
-                  <ProductSingleFaq />
+            <div className="Products_aside">
+              <h1>{title}</h1>
+              <p className="Products-aside_subTitle">{subTitle}</p>
+              <div className="Products_price">
+                <p className="Products-price_price">AED {oldPrice}</p>
+                <p className="Products-price_oldPrice">AED {price}</p>
+              </div>
+              <div className="Products-details_container">
+                <div className="Products-size">
+                  <p>Select Size</p>
+                  <span>Size Guide</span>
                 </div>
               </div>
+              <div className="Products-cty_sizes">
+                <p
+                  tabIndex="0"
+                  className={
+                    activeIndex === 0
+                      ? "Products-cty_text_eu active "
+                      : "active"
+                  }
+                  onClick={() => handleTextColor(0)}
+                >
+                  EU
+                </p>
+                <p
+                  tabIndex="0"
+                  className={
+                    activeIndex === 1 ? "Products-cty_text active " : "active"
+                  }
+                  onClick={() => handleTextColor(1)}
+                >
+                  US
+                </p>
+              </div>
+              <div className="Products-shoe_container">
+                <div
+                  className="Products-shoe_sizes"
+                  value={selectedSize}
+                  onChange={handleSizeSelect}
+                >
+                  {renderSizeOptions()}
+                </div>
+              </div>
+              <div className="Products-payments_container">
+                <div className="Products_interest">
+                  <div className="Products-four_payments">
+                    <p>
+                      or 4 payments of <span>AED {reducedPrice}. </span>No
+                      interest, <br></br> no fees.{" "}
+                      <span className="Products_learnMore">Learn more</span>
+                    </p>
+                  </div>
+                  <div>
+                    <img src={tabby} alt={tabby} />
+                  </div>
+                </div>
+                <div className="Products_addToBag">
+                  <button
+                    onClick={() => {
+                      dispatch(
+                        addToCart({
+                          id: id,
+                          title: title,
+                          subTitle: subTitle,
+                          price: price,
+                          image: mainImage,
+                        })
+                      );
+                      setOpen(true);
+                    }}
+                  >
+                    Add to bag
+                  </button>
+                  {open && <Cart handleClose={handleCartClose} />}
+                </div>
+                <ProductSingleFaq />
+              </div>
+            </div>
           </div>
         </div>
       </section>

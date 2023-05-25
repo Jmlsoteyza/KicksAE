@@ -252,26 +252,58 @@ video {
   .testing {
     grid-template-columns: repeat(2, minmax(0, 66%));
   }
-  .sub-images_container {
+  /* .sub-images_container {
     display: none;
-  }
+  } */
   .Products-text_seeAll {
     display: none;
   }
   .Products-flex_container {
     flex-direction: column;
   }
-  .Products-size, .Products-cty_sizes, .Products-shoe_sizes {
+  .Products_aside h1,
+  .Products-aside_subTitle,
+  .Products_price {
     display: none;
   }
-  .slide-container {
-    margin-top: 22rem;
-  }
+  /* .slide-container {
+    margin-top: 30rem;
+  } */
   .slide-image_container {
     gap: 1.2rem;
   }
   .slide-icons_flex {
     padding-inline: 1rem;
+  }
+  .Products_aside {
+    max-width: none;
+  }
+  .Products-images_container {
+    justify-content: center;
+    align-items: center;
+  }
+  .Products_adds-text {
+    display: block;
+    z-index: 999;
+  }
+  .Products_container {
+    height: fit-content;
+  }
+  .Products-flex_container {
+    margin-top: 1rem;
+  }
+  .main-image_container {
+    max-width: 650px;
+    width: 100%;
+  }
+  .Products_adds-text h1 {
+    font-size: 24px;
+  }
+  .Products-cty_sizes {
+    margin-top: 0.3rem;
+  }
+  .Products_interest {
+    margin-top: 40px;
   }
 }
 @media (max-width: 979px) and (min-width: 650px) {
@@ -308,6 +340,31 @@ video {
   .testing {
     grid-template-columns: repeat(1, minmax(0, 100%));
   }
+  .Products-images_container {
+    padding-right: 1rem;
+  }
+  .Products-images_container {
+    justify-content: start;
+    align-items: start;
+  }
+  .Products_adds-text p {
+    margin-block: 0.5rem;
+    color: #111;
+    font-weight: 500;
+  }
+  .Products-size {
+    margin-top: 1rem;
+  }
+  .Products-images_container {
+    margin-left: 10px;
+    padding-right: 10px;
+  }
+  .main-image_container {
+    max-width: none;
+  }
+  .Products_adds-text h1 {
+    line-height: 1.1;
+  }
 }
 @media (max-width: 649px) {
   .Blogs_logo h1 {
@@ -333,6 +390,9 @@ video {
     max-width: 100%;
     margin-inline: 1rem;
   }
+  .Products-images_container {
+    align-items: start;
+  }
 }
 @media (max-width: 500px) {
   .BlogsSingle_innerContainer h1 {
@@ -340,6 +400,14 @@ video {
     margin-bottom: 1rem;
     margin-top: 1.2rem;
     font-size: clamp(1rem, 10vw, 2rem);
+  }
+  .slide-image_container,
+  .slide-icons_flex {
+    display: none;
+  }
+  .Products_aside {
+    min-width: 0px;
+    max-width: none;
   }
 }
 @media (max-width: 448px) {
