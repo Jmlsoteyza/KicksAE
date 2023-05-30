@@ -10,7 +10,7 @@ const HomeCarousel = () => {
   const isDesktopOrLaptop = useMediaQuery({
     query: "(min-device-width: 1024px)",
   });
-  const isTabletOrMobile = useMediaQuery({ query: "(max-width: 1023px)" });
+  // const isTabletOrMobile = useMediaQuery({ query: "(max-width: 1023px)" });
 
   const BrandsResponsive = {
     superLargeDesktop: {
@@ -27,7 +27,7 @@ const HomeCarousel = () => {
     },
     mobile: {
       breakpoint: { max: 464, min: 0 },
-      items: 2,
+      items: 1,
     },
   };
 
@@ -35,7 +35,7 @@ const HomeCarousel = () => {
     <div className="homeCarousel_container">
       <h1 className="h1_absolute">Trending This Week</h1>
       <Carousel
-        useMediaQuery={isTabletOrMobile}
+        // useMediaQuery={isTabletOrMobile}
         responsive={BrandsResponsive}
         additionalTransfrom={0}
         autoPlaySpeed={3000}
@@ -52,9 +52,13 @@ const HomeCarousel = () => {
         {ProductData.map((product) => (
           <div key={product.key} className="carousel-item">
             <div className="carousel-item-container">
-            <Link to={`/StoreProduct/${product.id}`}>
-            <img className="small" src={product.image} alt={product.image} />
-            </Link>
+              <Link to={`/StoreProduct/${product.id}`}>
+                <img
+                  className="small"
+                  src={product.image}
+                  alt={product.image}
+                />
+              </Link>
               <div>
                 <h1>{product.title}</h1>
                 <h2>{product.subTitle}</h2>

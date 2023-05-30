@@ -27,11 +27,7 @@ const HomeImages = () => {
   return (
     <div className="HomeImages_container">
       <div className="HomeImages-inner_container">
-        <h1
-          style={{ fontSize: "24px", marginLeft: "8px", marginBottom: "12px" }}
-        >
-          Pick Your Brand
-        </h1>
+        <h1 className="homeImages-h1">Pick Your Brand</h1>
         <div className="HomeImages_images">
           {homeImagesData.map((product) => {
             return (
@@ -53,4 +49,3 @@ const HomeImages = () => {
 };
 
 export default HomeImages;
- 

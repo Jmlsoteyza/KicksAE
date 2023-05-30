@@ -12,7 +12,7 @@
   height: 100%;
 }
 .hero_layout {
-  width: 40.625rem;
+  /* width: 40.625rem; */
   margin-left: 7rem;
 }
 
@@ -40,6 +40,7 @@
   width: 100%;
   object-fit: cover;
   height: fit-content;
+  min-width: 550px;
 }
 .hero_images {
   object-fit: cover;

@@ -154,7 +154,7 @@ video {
 }
 @media (max-width: 1150px) {
   .Blogs-data_container {
-    max-width: 330px;
+    max-width: 20.625rem;
   }
   .Blogs_flex {
     padding: 2.813rem 0.5rem;
@@ -170,11 +170,10 @@ video {
     flex-direction: column;
   }
   .main-image_container {
-    width: 550px;
+    width: 34.375rem;
   }
   .Products-flex_container {
     justify-content: center;
-    /* align-items: center; */
   }
   .sub-images_container {
     flex-direction: row;
@@ -182,7 +181,7 @@ video {
 }
 @media (max-width: 1070px) {
   .Blogs-data_container {
-    max-width: 300px;
+    max-width: 18.75rem;
   }
   .about-us_text {
     padding: 1rem 1.2rem;
@@ -220,7 +219,7 @@ video {
     margin-left: 0;
     max-width: none;
     width: 100%;
-    padding: 40px 30px 30px 40px;
+    padding: 2.5rem 1.875rem 1.875rem 2.5rem;
   }
   .about-us_text p {
     margin-bottom: 1rem;
@@ -228,7 +227,7 @@ video {
   .about-us_center img {
     max-width: none;
     width: 100%;
-    height: 550px;
+    height: 34.375rem;
     min-width: none;
     object-fit: cover;
   }
@@ -252,9 +251,6 @@ video {
   .testing {
     grid-template-columns: repeat(2, minmax(0, 66%));
   }
-  /* .sub-images_container {
-    display: none;
-  } */
   .Products-text_seeAll {
     display: none;
   }
@@ -266,9 +262,6 @@ video {
   .Products_price {
     display: none;
   }
-  /* .slide-container {
-    margin-top: 30rem;
-  } */
   .slide-image_container {
     gap: 1.2rem;
   }
@@ -293,22 +286,30 @@ video {
     margin-top: 1rem;
   }
   .main-image_container {
-    max-width: 650px;
+    max-width: 40.625rem;
     width: 100%;
   }
   .Products_adds-text h1 {
-    font-size: 24px;
+    font-size: 1.5rem;
   }
   .Products-cty_sizes {
     margin-top: 0.3rem;
   }
   .Products_interest {
-    margin-top: 40px;
+    margin-top: 2.5rem;
+  }
+}
+@media (max-width: 975px) {
+  .hero_images {
+    display: none;
+  }
+  .hero_layout {
+    margin-left: 0;
   }
 }
 @media (max-width: 979px) and (min-width: 650px) {
   .Blogs-data_container {
-    max-width: 350px;
+    max-width: 21.875rem;
   }
   .Blogs_logo h1 {
     font-size: 2.5rem;
@@ -319,13 +320,13 @@ video {
 }
 @media (max-width: 745px) {
   .Blogs-data_container {
-    max-width: 280px;
+    max-width: 17.5rem;
   }
   .products-imageAds {
     display: none;
   }
   .hero-autoplay_text {
-    height: 60px;
+    height: 3.75rem;
     padding: 0;
     padding-top: 0.875rem;
   }
@@ -356,14 +357,25 @@ video {
     margin-top: 1rem;
   }
   .Products-images_container {
-    margin-left: 10px;
-    padding-right: 10px;
+    margin-left: 0.625rem;
+    padding-right: 0.625rem;
   }
   .main-image_container {
     max-width: none;
   }
   .Products_adds-text h1 {
     line-height: 1.1;
+  }
+}
+@media (max-width: 675px) {
+  .hero-icons_container {
+    display: none;
+  }
+  .HomeImages_container {
+    padding-inline: 1rem;
+  }
+  .homeUI_contaniner {
+    padding-inline: 1rem;
   }
 }
 @media (max-width: 649px) {
@@ -393,6 +405,57 @@ video {
   .Products-images_container {
     align-items: start;
   }
+  .HomeImages_images {
+    gap: 0.753rem;
+  }
+}
+@media (max-width: 550px) {
+  .hero_layout {
+    width: 100%;
+    text-align: center;
+  }
+  .hero_layout h2 {
+    font-size: 2.625rem;
+  }
+  .hero_layout p {
+    font-size: 0.75rem;
+    width: 100%;
+    padding-right: 1rem;
+  }
+  .homeUI_secImg h1 {
+    font-size: 1.5rem;
+    max-width: 10rem;
+    width: 100%;
+  }
+  .homeUI_firstImg h1 {
+    font-size: 1.125rem;
+  }
+  .homeUI_firstImg p {
+    font-size: 0.75rem;
+  }
+  .h1_absolute {
+    font-size: 1.125rem;
+    margin-left: 1rem;
+  }
+  .HomeImages-inner_container {
+    font-size: 1.125rem;
+  }
+  .HomeImages_titles h1 {
+    font-size: 1rem;
+  }
+  .HomeImages_titles button {
+    font-size: 0.75rem;
+  }
+  .homeImages-h1 {
+    font-size: 1.125rem;
+  }
+  .homeCarousel_container {
+    padding: 1rem;
+  }
+  .HomeImages_images {
+    flex-direction: column;
+    gap: 3rem;
+  }
 }
 @media (max-width: 500px) {
   .BlogsSingle_innerContainer h1 {
@@ -412,7 +475,18 @@ video {
 }
 @media (max-width: 448px) {
   .footer_accounts {
-    max-width: 150px;
+    max-width: 9.375rem;
+  }
+  .container {
+    padding-left: 0;
+  }
+}
+@media (max-width: 430px) {
+  .homeUI_contaniner {
+    display: none;
+  }
+  .carousel-item-container {
+    padding: 0;
   }
 }
 @media (max-width: 414px) {
@@ -426,6 +500,6 @@ video {
 }
 @media (max-width: 400px) {
   .BlogsSingle_headline {
-    font-size: 12px;
+    font-size: 0.75rem;
   }
 }
