@@ -5,7 +5,20 @@
   font-weight: 600;
   box-sizing: border-box;
   border-bottom: 1px solid #e0e0e0;
-  z-index: 999 !important;
+  z-index: 1003 !important;
+  position: relative;
+  top: 0;
+}
+
+.stickyNav {
+  position: fixed;
+  top: -100%;
+  width: 100%;
+  z-index: 1001 !important;
+}
+
+.navbar_scroll.stickyNav {
+  top: 0;
 }
 .navbar_wrapper {
   display: flex;

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
 import Logo from "../assets/images/logo.png";
 import { BiSearch } from "react-icons/bi";
@@ -10,6 +10,7 @@ import { useSelector } from "react-redux";
 const Navbar = () => {
   const [open, setOpen] = useState(false);
   const [navbarOpen, setNavbarOpen] = useState(false);
+  const [scrollNav, setScrollNav] = useState(false);
   const products = useSelector((state) => state.cart.products);
 
   const navbarClick = () => setNavbarOpen(!navbarOpen);
@@ -18,68 +19,87 @@ const Navbar = () => {
     setOpen(false);
   };
 
+  const handleScroll = () => {
+    if (window.pageYOffset >= 100) {
+      setScrollNav(true);
+    } else {
+      setScrollNav(false);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
     <>
-      <section className="navbar_container">
-        <div className="navbar_wrapper">
-          <NavLink to="/">
-            <div className="logo">
-              <img src={Logo} alt={Logo} />
-            </div>
-          </NavLink>
-          <ul className={navbarOpen ? "navbar_ul active" : "navbar_ul"}>
-            <NavLink
-              className={({ isActive }) => (isActive ? "link active" : "link")}
-              to="/"
-            >
-              <li className="navbar_home">Home</li>
+      <div className={`navbar_scroll ${scrollNav ? "stickyNav" : ""}`}>
+        <section className="navbar_container">
+          <div className="navbar_wrapper">
+            <NavLink to="/">
+              <div className="logo">
+                <img src={Logo} alt={Logo} />
+              </div>
             </NavLink>
-            <NavLink to="About" className="link">
-              <li>About</li>
-            </NavLink>
-            <NavLink to="StoreProduct" className="link">
-              <li>Shop</li>
-            </NavLink>
-            <NavLink to="Blogs" className="link">
-              <li>Blogs</li>
-            </NavLink>
-          </ul>
-          <div className="navbar_right">
-            <div className="navbar_searchBar">
-              <input
-                className="navbar_search"
-                type="text"
-                placeholder="Search"
-              />
-              <button className="navbar-btn_logo">
-                <BiSearch
-                  className="navbar-search_logo"
-                  style={{ fontSize: 25 }}
-                />
-              </button>
-            </div>
-            <div className="navbar_cartLogo">
-              <div
-                className="navbar_shoppingBag"
-                onClick={() => setOpen(!open)}
+            <ul className={navbarOpen ? "navbar_ul active" : "navbar_ul"}>
+              <NavLink
+                className={({ isActive }) =>
+                  isActive ? "link active" : "link"
+                }
+                to="/"
               >
-                <span className="navbar_number">{products.length}</span>
-                <BiShoppingBag
-                  style={{ fontSize: "26px", cursor: "pointer" }}
+                <li className="navbar_home">Home</li>
+              </NavLink>
+              <NavLink to="About" className="link">
+                <li>About</li>
+              </NavLink>
+              <NavLink to="StoreProduct" className="link">
+                <li>Shop</li>
+              </NavLink>
+              <NavLink to="Blogs" className="link">
+                <li>Blogs</li>
+              </NavLink>
+            </ul>
+            <div className="navbar_right">
+              <div className="navbar_searchBar">
+                <input
+                  className="navbar_search"
+                  type="text"
+                  placeholder="Search"
                 />
+                <button className="navbar-btn_logo">
+                  <BiSearch
+                    className="navbar-search_logo"
+                    style={{ fontSize: 25 }}
+                  />
+                </button>
+              </div>
+              <div className="navbar_cartLogo">
+                <div
+                  className="navbar_shoppingBag"
+                  onClick={() => setOpen(!open)}
+                >
+                  <span className="navbar_number">{products.length}</span>
+                  <BiShoppingBag
+                    style={{ fontSize: "26px", cursor: "pointer" }}
+                  />
+                </div>
+              </div>
+              <div
+                className={navbarOpen ? "toggle active" : "toggle"}
+                onClick={navbarClick}
+              >
+                <span></span>
+                <span></span>
+                <span></span>
               </div>
             </div>
-            <div
-              className={navbarOpen ? "toggle active" : "toggle"}
-              onClick={navbarClick}
-            >
-              <span></span>
-              <span></span>
-              <span></span>
-            </div>
           </div>
-        </div>
-      </section>
+        </section>
+      </div>
       {open && <Cart handleClose={handleCartClose} />}
     </>
   );
