@@ -1,7 +1,4 @@
 import React from "react";
-import HomeImages1 from "../assets/images/HomeImages1.jpg";
-import HomeImages2 from "../assets/images/HomeImages2.jpg";
-import HomeImages3 from "../assets/images/HomeImages3.jpg";
 import "../Styles/HomeImages.css";
 import { Link } from "react-router-dom";
 
@@ -10,17 +7,14 @@ const HomeImages = () => {
     {
       subTitle: "Jordan",
       btn: "SHOP NOW",
-      images: HomeImages1,
     },
     {
       subTitle: "Nike Airforce",
       btn: "SHOP NOW",
-      images: HomeImages2,
     },
     {
       subTitle: "PUMA",
       btn: "SHOP NOW",
-      images: HomeImages3,
     },
   ];
 
@@ -32,7 +26,6 @@ const HomeImages = () => {
           {homeImagesData.map((product) => {
             return (
               <div key={product.id} className="">
-                <img src={product.images} alt={product.images} />
                 <div className="HomeImages_titles">
                   <h1>{product.subTitle}</h1>
                   <Link to="/StoreProduct">
