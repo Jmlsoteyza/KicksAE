@@ -52,8 +52,8 @@ const About = () => {
                   <MdLocationPin className="contact-us_mdIcons" />
                 </div>
                 <div style={{ display: "block" }}>
-                  <p>28 Green Tower, Street Name,</p>
-                  <p> New York City, USA</p>
+                  <p>Al mankhool St</p>
+                  <p> Bur Dubai, Dubai Frame</p>
                 </div>
               </div>
               <div className="contact-details_flex">
@@ -66,7 +66,7 @@ const About = () => {
                 <div className="contact-us_icons">
                   <MdMail className="contact-us_mdIcons" />
                 </div>
-                <span>company-email@gmail.com</span>
+                <span>Jmlsoteyza.dev@gmail.com</span>
               </div>
             </div>
             <div className="contact-message_container">

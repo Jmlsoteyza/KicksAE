@@ -31,8 +31,8 @@ const HomeImages = () => {
         <div className="HomeImages_images">
           {homeImagesData.map((product) => {
             return (
-              <div key={product.key} className="">
-                <img src={product.images} alt="" />
+              <div key={product.id} className="">
+                <img src={product.images} alt={product.images} />
                 <div className="HomeImages_titles">
                   <h1>{product.subTitle}</h1>
                   <Link to="/StoreProduct">

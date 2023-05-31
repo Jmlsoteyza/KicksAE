@@ -50,8 +50,8 @@ const HomeCarousel = () => {
         slidesToSlide={1}
       >
         {ProductData.map((product) => (
-          <div key={product.key} className="carousel-item">
-            <div className="carousel-item-container">
+          <div key={product.id} className="carousel-item">
+            <div className="carousel-item-container" key={product.id}>
               <Link to={`/StoreProduct/${product.id}`}>
                 <img
                   className="small"

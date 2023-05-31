@@ -98,6 +98,10 @@ hr {
   background-color: #111;
   border-radius: 6px;
 }
+.Checkout-form_button button:hover {
+  cursor: pointer;
+  
+}
 .Checkout-payments_container h3 {
   font-size: 0.75rem;
 }

@@ -100,8 +100,18 @@ const StoreProduct = () => {
               >
                 Nike Airforce 1
               </span>
-              <span className="product_span">Puma</span>
-              <span className="product_span">New Balance</span>
+              <span
+                className="product_span"
+                onClick={() => filterResult("Puma")}
+              >
+                Puma
+              </span>
+              <span
+                className="product_span"
+                onClick={() => filterResult("New Balance")}
+              >
+                New Balance
+              </span>
               <span className="product_span" onClick={() => resetFilter()}>
                 All
               </span>
@@ -166,9 +176,7 @@ const StoreProduct = () => {
             </div>
           </div>
           <div className="products">
-            <h1 className="products_h1">
-              Products
-            </h1>
+            <h1 className="products_h1">Products</h1>
             <div className="products-imageAds">
               <img src={logoAds} alt={logoAds} />
             </div>

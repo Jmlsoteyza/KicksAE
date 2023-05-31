@@ -20,7 +20,7 @@ const Navbar = () => {
   };
 
   const handleScroll = () => {
-    if (window.pageYOffset >= 100) {
+    if (window.pageYOffset > 100) {
       setScrollNav(true);
     } else {
       setScrollNav(false);
@@ -29,9 +29,6 @@ const Navbar = () => {
 
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
   }, []);
 
   return (
