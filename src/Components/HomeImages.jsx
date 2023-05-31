@@ -1,7 +1,7 @@
 import React from "react";
-import HomeImages1 from "../assets/images/HomeImages1.png";
-import HomeImages2 from "../assets/images/HomeImages2.png";
-import HomeImages3 from "../assets/images/HomeImages3.png";
+import HomeImages1 from "../assets/images/HomeImages1.jpg";
+import HomeImages2 from "../assets/images/HomeImages2.jpg";
+import HomeImages3 from "../assets/images/HomeImages3.jpg";
 import "../Styles/HomeImages.css";
 import { Link } from "react-router-dom";
 
