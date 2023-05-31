@@ -13,7 +13,7 @@ import { Link } from "react-router-dom";
 import HomeUI from "../Components/HomeUI";
 import HomeCarousel from "../Components/HomeCarousel";
 import HomeImages from "../Components/HomeImages";
-import BrandIcon1 from "../assets/images/brandsIcon1.svg";
+import BrandIcon1 from "../assets/images/brandsIcon1.png";
 import BrandIcon2 from "../assets/images/brandsIcon2.svg";
 import BrandIcon3 from "../assets/images/brandsIcon3.svg";
 import PercentSlider from "../Components/PercentSlider";
