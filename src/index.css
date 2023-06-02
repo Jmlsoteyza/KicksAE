@@ -354,11 +354,18 @@ video {
     display: block;
   }
   .product_flex img {
-    object-fit: cover;
+    object-fit: fill;
+    width: 100%;
   }
   .cart_img,
   .cart_mini img {
     object-fit: cover;
+    width: 100%;
+  }
+  .cart-mini img {
+    max-width: 5rem;
+    height: 5rem;
+    width: 100%;
   }
 }
 @media (max-width: 700px) {
