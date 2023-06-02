@@ -1,12 +1,14 @@
 import React from "react";
 import "../Styles/HomeImages.css";
 import { Link } from "react-router-dom";
+import HomeImages1 from "../assets/images/HomeImages01.png";
 
 const HomeImages = () => {
   const homeImagesData = [
     {
       subTitle: "Jordan",
       btn: "SHOP NOW",
+      images: HomeImages1,
     },
     {
       subTitle: "Nike Airforce",
@@ -26,6 +28,7 @@ const HomeImages = () => {
           {homeImagesData.map((product) => {
             return (
               <div key={product.id} className="">
+                <img src={product.images} alt={product.images} />
                 <div className="HomeImages_titles">
                   <h1>{product.subTitle}</h1>
                   <Link to="/StoreProduct">
