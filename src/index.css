@@ -318,6 +318,23 @@ video {
     font-size: 2.5rem;
   }
 }
+@media (max-width: 865px) {
+  .Checkout_container {
+    height: fit-content;
+    margin-top: 5rem;
+  }
+  .Checkout-payments_productsContainer {
+    flex-direction: column;
+  }
+  .Checkout-payments_container {
+    max-width: none;
+  }
+  .Checkout-products_container {
+    width: 100%;
+    max-width: 100%;
+    margin-top: 3.5rem;
+  }
+}
 @media (max-width: 745px) {
   .Blogs-data_container {
     max-width: 17.5rem;
@@ -335,6 +352,13 @@ video {
   }
   .products_h1 {
     display: block;
+  }
+  .product_flex img {
+    object-fit: cover;
+  }
+  .cart_img,
+  .cart_mini img {
+    object-fit: cover;
   }
 }
 @media (max-width: 700px) {
