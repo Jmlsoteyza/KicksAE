@@ -354,7 +354,7 @@ video {
     display: block;
   }
   .product_flex img {
-    object-fit: fill;
+    object-fit: cover;
     width: 100%;
   }
   .cart_img,
