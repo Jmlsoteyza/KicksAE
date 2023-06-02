@@ -3,7 +3,7 @@ import "../Styles/HomeImages.css";
 import { Link } from "react-router-dom";
 import HomeImages1 from "../assets/images/HomeImages01.png";
 import HomeImages3 from "../assets/images/HomeImages03.png";
-import HomeImages2 from "../assets/images/HomeImages3.png";
+import HomeImages2 from "../assets/images/HomeImages2.png";
 
 const HomeImages = () => {
   const homeImagesData = [
