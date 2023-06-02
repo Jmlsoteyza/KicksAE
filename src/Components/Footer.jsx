@@ -12,8 +12,8 @@ const Footer = () => {
               <ul className="footer_ul">
                 <li>
                   <span>Address: </span>
-                  28 Green Tower, Street Name,
-                  <br /> New York City, USA
+                  Al mankhool St
+                  <br /> Bur Dubai, Dubai Frame
                 </li>
                 <li>
                   <span>Cellphone: </span>
@@ -56,9 +56,7 @@ const Footer = () => {
       </div>
       <div className="footer_bottom">
         <div className="footer_innerBottom">
-            <span >
-            © KicksAE. All Rights Reserved 2023
-            </span>
+          <span>© KicksAE. All Rights Reserved 2023</span>
         </div>
       </div>
     </footer>

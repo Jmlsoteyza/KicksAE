@@ -17,9 +17,6 @@ import PercentSlider from "../Components/PercentSlider";
 import HomeLogos1 from "../assets/images/HomeLogos1.png";
 import HomeLogos2 from "../assets/images/HomeLogos2.png";
 import HomeLogos3 from "../assets/images/HomeLogos3.png";
-import BrandIcon1 from "../assets/images/brandsIcon1.jpg";
-import BrandIcon2 from "../assets/images/brandsIcon2.jpg";
-import BrandIcon3 from "../assets/images/brandsIcon3.jpg";
 
 const Home = () => {
   const heroData = [
@@ -89,11 +86,7 @@ const Home = () => {
       <HomeCarousel />
       <HomeImages />
       <div className="hero-icons_container">
-        <div className="hero-icons_InnerContainer">
-          <img className="hero-icons_nike" src={BrandIcon1} alt="BrandIcon1" />
-          <img className="hero-icons_logo" src={BrandIcon2} alt="BrandIcon1" />
-          <img className="hero-icons_logo" src={BrandIcon3} alt="BrandIcon1" />
-        </div>
+        <div className="hero-icons_InnerContainer"></div>
       </div>
     </section>
   );
