@@ -9,10 +9,13 @@ const HomeUI = () => {
       <div className="homeUI_innercontainer">
         <div className="homeUI_firstImg">
           <img src={HomeUIimg1} alt={HomeUIimg1} />
-          <h1>Air Jordan 1 Retro High OG "Chicago Lost And Found" sneakers</h1>
+          <h1>Air Jordan 1 Retro High OG</h1>
           <p>
             Always fresh and timeless, the Air Jordan 1 High is one of the most
-            iconic sneakers of all time.
+            iconic sneakers of all time. This version of Michael Jordan's
+            signature silhouette channels a fresh yet classic colourway,
+            consisting of contrasting white, red and black panels for a timeless
+            touch.
           </p>
         </div>
         <div className="homeUI_secImg">
