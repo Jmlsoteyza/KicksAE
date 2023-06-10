@@ -120,6 +120,9 @@ video {
   font: inherit;
   vertical-align: baseline;
 }
+.Checkout-bag_removeIcon {
+  cursor: pointer;
+}
 @media (max-width: 1250px) {
   .products-imageAds img {
     height: auto;
